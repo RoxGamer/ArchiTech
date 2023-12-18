@@ -1,0 +1,83 @@
+section {
+  position: relative;
+  width: 100%;
+  font-family: 'Orbitron', sans-serif;
+  /* background-color: aqua; */
+  padding-top: 70px;
+  padding-bottom: 100px;
+  top: -7%;
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='1000' preserveAspectRatio='none' viewBox='0 0 1440 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1008%26quot%3b)' fill='none'%3e%3crect width='1440' height='1000' x='0' y='0' fill='rgba(3%2c 4%2c 18%2c 1)'%3e%3c/rect%3e%3cpath d='M-130.5516004934085 50.99474451160047L32.8401100110996 302.5959148952277 284.4412803947268 139.20420439071955 121.04956989021869-112.39696599290762z' fill='rgba(6%2c 12%2c 39%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-45.769951189899345 19.19839662561057L135.81435757753002 310.4112338894108 281.257243651431 48.02532174759207z' fill='rgba(6%2c 12%2c 39%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M244.85641711596247-6.013398410524026L75.24679788467728-111.99725125716499 1.075828230358411 195.40910401308332z' fill='rgba(6%2c 12%2c 39%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1517.8440807526442 124.36606581845511L1469.4597016327107-69.6930794367442 1202.5631733098785 99.91306187075578z' fill='rgba(6%2c 12%2c 39%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1135.83 -29.15 a75.02 75.02 0 1 0 150.04 0 a75.02 75.02 0 1 0 -150.04 0z' fill='rgba(6%2c 12%2c 39%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1486.6845436988663-3.4691589899021906L1318.9504301097813-112.39696599290761 1239.4257763998157 193.66810789222228z' fill='rgba(6%2c 12%2c 39%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M240.525%2c1334.934C339.854%2c1333.4%2c416.453%2c1256.775%2c464.096%2c1169.604C509.511%2c1086.509%2c525.421%2c985.336%2c475.617%2c904.795C427.85%2c827.548%2c331.348%2c807.823%2c240.525%2c808.059C150.23%2c808.294%2c56.204%2c829.952%2c7.54%2c906.011C-44.583%2c987.477%2c-41.498%2c1091.715%2c4.665%2c1176.7C53.099%2c1265.866%2c139.066%2c1336.501%2c240.525%2c1334.934' fill='rgba(6%2c 12%2c 39%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M80.389%2c1018.27C131.298%2c1018.819%2c183.985%2c998.93%2c207.45%2c953.748C229.632%2c911.038%2c206.969%2c862.88%2c182.666%2c821.34C158.7%2c780.377%2c127.832%2c737.789%2c80.389%2c736.569C31.439%2c735.31%2c-7.153%2c773.306%2c-31.423%2c815.834C-55.441%2c857.922%2c-65.443%2c908.64%2c-42.014%2c951.059C-17.893%2c994.729%2c30.503%2c1017.732%2c80.389%2c1018.27' fill='rgba(6%2c 12%2c 39%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-66.66666666666663 1066.6666666666667L233.33333333333337 1066.6666666666667 233.33333333333331 766.6666666666667-66.66666666666669 766.6666666666667z' fill='rgba(6%2c 12%2c 39%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1512.3817206202662 1060.7485550527658L1501.9118716095159 760.9313069470371 1202.0946235037873 771.4011559577873 1212.5644725145376 1071.2184040635161z' fill='rgba(6%2c 12%2c 39%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1571.3717460042983 944.9741115140491L1403.6138749630743 696.2628397475366 1154.9026031965618 864.0207107887607 1322.6604742377858 1112.7319825552731z' fill='rgba(6%2c 12%2c 39%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1337.517%2c1035.296C1388.95%2c1036.863%2c1442.681%2c1017.624%2c1467.038%2c972.296C1490.465%2c928.698%2c1470.749%2c877.725%2c1444.85%2c835.548C1420.458%2c795.826%2c1384.074%2c763.662%2c1337.517%2c761.372C1286.883%2c758.881%2c1235.388%2c780.016%2c1210.189%2c824.004C1185.112%2c867.779%2c1194.942%2c921.589%2c1220.981%2c964.799C1246.096%2c1006.476%2c1288.881%2c1033.814%2c1337.517%2c1035.296' fill='rgba(6%2c 12%2c 39%2c 1)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1008'%3e%3crect width='1440' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+
+.title {
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.question-mark{
+  position: absolute;
+  height: 60px;
+  /* opacity: 0.5; */
+  left: 57%;
+  top: 20%;
+  /* z-index: -1; */
+}
+
+.questions-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  
+}
+
+.question {
+  border-bottom: 1px solid #fff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.question button {
+  font-family: 'Orbitron', sans-serif;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  border: none;
+  outline: none;
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.question p {
+  font-size: 1.1em;
+  max-height: 0;
+  opacity: 0; /* Set initial opacity to 0 for the fade-in effect */
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  color: white;
+}
+
+
+
+/* Remove the max-height property when the answer is shown */
+.question p.show {
+  max-height: 1000px; /* Set a large value to allow the content to grow */
+  opacity: 1; /* Set opacity to 1 to make the answer fully visible */
+  padding: 0px 15px 30px 15px;
+  
+}
+
+.d-arrow {
+  transition: transform 0.5s ease-in;
+  color: #fff;
+}
+.question button .d-arrow.rotate {
+  transform: rotate(180deg);
+}
+

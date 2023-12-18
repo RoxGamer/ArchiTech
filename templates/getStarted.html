@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'getStarted.css' %}" />
+    {% comment %}
+    <link rel="stylesheet" href="{% static 'style111.css' %}" />
+    {% endcomment %}
+  </head>
+  <body>
+    <div class="header">
+      
+      <img
+        src="{% static 'images/logo7.png' %}"
+        class="logo"
+        alt=""
+        srcset=""
+      />
+    </div>
+
+    <div class="main">
+      <div class="input">
+        <label for="description">Enter your description: </label>
+
+        <textarea id="story" name="story" rows="5" cols="33" placeholder="Enter your text here...">        
+        </textarea>
+
+        
+        <div class="buttons">
+          <button class="click click-1">
+            Generate
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+            <span class="fourth"></span>
+          </button>
+          <button class="click click-2">
+            Clear
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+            <span class="fourth"></span>
+          </button>
+          <button class="click click-2">
+            Download
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+            <span class="fourth"></span>
+          </button>
+        </div>
+        <h2><a href="{% url 'go_home' %}">HOME</a></h2>
+        
+        
+      </div>
+      <div class="output">
+        <div class="output-box"></div>
+      </div>
+    </div>
+
+    {% comment %}
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <label for="red">Red:</label>
+      <input
+        type="number"
+        id="red"
+        name="red"
+        min="0"
+        max="255"
+        required
+      /><br />
+      <label for="green">Green:</label>
+      <input
+        type="number"
+        id="green"
+        name="green"
+        min="0"
+        max="255"
+        required
+      /><br />
+      <label for="blue">Blue:</label>
+      <input
+        type="number"
+        id="blue"
+        name="blue"
+        min="0"
+        max="255"
+        required
+      /><br />
+      <input type="submit" value="Generate Image" />
+    </form>
+
+    {% if image_data %}
+    <img
+      src="data:image/png;base64,{{ image_data }}"
+      alt="RGB Color Image"
+      style="width: {{ image_size }}px; height: {{ image_size }}px; background-color: rgb({{ red }}, {{ green }}, {{ blue }});"
+    />
+    {% endif %}
+
+    <form method="post" action="{% url 'regenerate_image' %}">
+      {% csrf_token %}
+      <input type="submit" value="Regenerate" name="regenerate" />
+    </form>
+
+    <form method="post" action="{% url 'clear_image' %}">
+      {% csrf_token %}
+      <input type="submit" value="Clear" name="clear" />
+    </form>
+    {% endcomment %}
+
+    
+    <script src="{% static 'index.js' %}"></script>
+  </body>
+</html>
+
+{% comment %} {% extends 'base.html' %} {% block title %}Get Started Page{%
+endblock %} {% load static %} {% block content %}
+<div class="hello"></div>
+{% endblock %}
+
+<link rel="stylesheet" href="{% static 'getStarted.css' %}" /> {% endcomment %}

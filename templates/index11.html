@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style11.css' %}" />
+    <link rel="stylesheet" href="{% static 'style111.css' %}" />
+    <link rel="stylesheet" href="{% static 'style1111.css' %}" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="menu">
+        <ul>
+          {% comment %}
+          <li><a href="#">HOME</a></li>
+          {% endcomment %}
+          <li><a href="#about-us">ABOUT US</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          {% comment %}
+          <li><a href="#">LOREM</a></li>
+          {% endcomment %}
+          <li><a href="#why">WHY US</a></li>
+        </ul>
+      </div>
+      <span class="register">
+        <!-- <button class="log">Login</button> -->
+        <!-- <button class="reg">Sign up</button> -->
+      </span>
+    </div>
+    <div class="main-body">
+      <img
+        src="{% static 'images/logo7.png' %}"
+        class="logo"
+        alt=""
+        srcset=""
+      />
+      <div class="main">
+        <div class="text-box">
+          {% comment %}
+          <h4 class="first-tag">IT STARTS WITH A FOUNDATION</h4>
+          {% endcomment %}
+          <p class="second-tag">
+            TRANSFORMING IDEAS INTO BEAUTIFUL
+            <span class="blueprint" title="BLUEPRINTS">BLUEPRINTS</span>
+          </p>
+          <h3 class="third-tag">YOUR VISION, OUR EXPERTISE</h3>
+        </div>
+      </div>
+      <button class="button-52" role="button">
+        <a href="{% url 'get_started' %}">GET STARTED</a>
+      </button>
+    </div>
+
+    <div class="explain1">
+      <div class="quote">
+        <p>
+          "In the AI-driven realm of architecture, every line drawn echoes the
+          harmony of human ingenuity and machine intelligence."
+        </p>
+      </div>
+      <div class="method">
+        <p>Input your ideas</p>
+        <div class="arrow arrow1">
+          <div class="indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <p>Click generate</p>
+        <div class="arrow arrow2">
+          <div class="indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <p>Examine the blueprint</p>
+        <div class="arrow arrow3">
+          <div class="indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <p>Download as you wish.</p>
+      </div>
+
+      <div class="about" id="about-us">
+        <div class="about-left hidden">ABOUT US</div>
+        <div class="about-right hidden">
+          Welcome to ARCHITECH, where designing your dream home is made simple.
+          We are dedicated developers and designers committed to creating
+          user-friendly 2D floor plan software. Define dimensions, add walls,
+          doors, windows, and furniture effortlessly. Visualize and personalize
+          your living spaces with ease. Join our journey of creativity and
+          innovation as we revolutionize home design.
+        </div>
+      </div>
+
+      <div class="features" id="why">
+        <div class="feature-1 hidden">
+          <img src="{% static 'images/user.png' %}" alt="" />
+          <p>User-Centric Design</p>
+        </div>
+        <div class="feature-2 hidden">
+          <img src="{% static 'images/feature.png' %}" alt="" />
+          <p>Comprehensive Features</p>
+        </div>
+        <div class="feature-3 hidden">
+          <img src="{% static 'images/algo.png' %}" alt="" />
+          <p>Powerful Algorithms</p>
+        </div>
+        <div class="feature-4 hidden">
+          <img src="{% static 'images/integration.png' %}" alt="" />
+          <p>Seamless Integration</p>
+        </div>
+        <div class="feature-5 hidden">
+          <img src="{% static 'images/downloadarrow.png' %}" alt="" />
+          <p>Easy Download</p>
+        </div>
+      </div>
+
+      <div class="first-line hidden"></div>
+      <img src="{% static 'images/hand.png' %}" class="hand" alt="" srcset="" />
+
+      <button class="button-53" role="button">
+        <a
+          href="{% url 'get_started' %}"
+          style="color: white; text-decoration: none"
+          >GET STARTED</a
+        >
+      </button>
+
+      <div class="box first-box"></div>
+    </div>
+    <div class="box solid-box"></div>
+
+    {% comment %}
+    <div class="below"></div>
+    {% endcomment %}
+
+    <section id="faq">
+      {% comment %}
+      <img
+        src="{% static 'images/s.png' %}"
+        class="question-mark"
+        alt=""
+        srcset=""
+      />
+      {% endcomment %}
+      <h1 class="title">FAQ's</h1>
+
+      <div class="questions-container">
+        <div class="question">
+          <button>
+            <span>How to use the site?</span>
+            <i class="fas fa-chevron-down d-arrow"></i>
+          </button>
+          <p>
+            Click on the Get Started button, you will be redirected to the image generation page. Enter your requirements into the text box and select batch size to choose number of images then click generate. You will see the response on your screen
+          </p>
+        </div>
+
+        <div class="question">
+          <button>
+            <span>How do I save these image?</span>
+            <i class="fas fa-chevron-down d-arrow"></i>
+          </button>
+          <p>
+            You can save the images to your local storage by clicking on the download button on top right corner of generated image.
+          </p>
+        </div>
+
+        <div class="question">
+          <button>
+            <span>Can I get multiple ideas for the same text?</span>
+            <i class="fas fa-chevron-down d-arrow"></i>
+          </button>
+          <p>
+            Yes, you can create multiple images from the same text. You just need to increase the batch size from slider.
+          </p>
+        </div>
+    
+
+    <div class="question">
+      <button>
+        <span>What formats are available to store the images? </span>
+        <i class="fas fa-chevron-down d-arrow"></i>
+      </button>
+      <p>
+        The images are downloaded in .png format
+      </p>
+    </div>
+  </div>
+</section>
+
+    {% comment %}
+    <div class="faq"></div>
+    {% endcomment %}
+    <script src="{% static 'index.js' %}"></script>
+  </body>
+</html>
